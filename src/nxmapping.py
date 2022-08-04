@@ -1,3 +1,4 @@
+from hotkeys import *
 # Button Mapping
 Buttons = {
 
@@ -49,5 +50,24 @@ LeftStick = {
     39: ["0x7FFF 0x0", "0x0 0x0"], 
     40: ["yVal -0x8000", "yVal 0x0000"],
     37: ["-0x8000 0x0", "0x0 0x0"]
+
+}
+
+ControllerReset = {
+
+    20: "configure controllerType 3"
+
+}
+
+ScreenSettings = {
+
+    33: ["screenOff", "screenOn"]
+
+}
+
+HotKeys = {
+
+    27: KillSysRelay,
+    8: ToggleControllerMapping
 
 }
