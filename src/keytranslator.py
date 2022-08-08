@@ -24,7 +24,6 @@ class KeyCapture():
         # Right stick movement
         elif CheckValue in RightStick:
             SwitchControl.SendToSwitch(self.switch, f"setStick RIGHT {RightStick[CheckValue][0]}")
-            SwitchControl.SendToSwitch(self.switch, f"setStick RIGHT {RightStick[CheckValue][1]}")
 
         # Press special button
         elif CheckValue in NumberedKeys:
@@ -33,7 +32,6 @@ class KeyCapture():
         # Left stick movement
         elif CheckValue in LeftStick:
             SwitchControl.SendToSwitch(self.switch, f"setStick LEFT {LeftStick[CheckValue][0]}")
-            SwitchControl.SendToSwitch(self.switch, f"setStick LEFT {LeftStick[CheckValue][1]}")
 
         else:
             pass
@@ -49,6 +47,14 @@ class KeyCapture():
         # sys-botbase controller reset
         elif CheckValue in ControllerReset:
             SwitchControl.SendToSwitch(self.switch, ControllerReset[CheckValue])
+
+        # Right stick movement
+        elif CheckValue in RightStick:
+            SwitchControl.SendToSwitch(self.switch, f"setStick RIGHT {RightStick[CheckValue][1]}")
+
+        # Left stick movement
+        elif CheckValue in LeftStick:
+            SwitchControl.SendToSwitch(self.switch, f"setStick LEFT {LeftStick[CheckValue][1]}")
 
         # Flip between Switch screen on/off
         elif CheckValue in ScreenSettings:
