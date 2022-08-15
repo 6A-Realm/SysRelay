@@ -16,3 +16,4 @@ A [sys-botbase](https://github.com/olliz0r/sys-botbase) and [SysDVR](https://git
 
 ## Credits:
 - [wwwwwwzx](https://github.com/wwwwwwzx) for controller image and button mapping
+- [slluxx](https://github.com/Slluxx) for general improvement and suggestions
